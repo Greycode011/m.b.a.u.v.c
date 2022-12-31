@@ -8,8 +8,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Homescreen from './screens/Homescreen'
 import Tr from "./screens/Tr";
-
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 const Stack = createStackNavigator();
+
 
 export default function App() {
   return (
